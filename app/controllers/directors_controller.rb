@@ -9,5 +9,10 @@ class DirectorsController < ApplicationController
     # Store the director in the @director instance variable so the view can format it
 
     # @director = ???
+
+    id = params[:id]
+    @actor = Director.find_by({ :id => id.to_i })
+
+
   end
 end
