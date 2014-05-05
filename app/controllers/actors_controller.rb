@@ -1,6 +1,6 @@
 class ActorsController < ApplicationController
   def index
-    @list_of_actors = Actors.all
+    @list_of_actors = Actor.all
   end
 
   def show
