@@ -8,10 +8,10 @@ class DirectorsController < ApplicationController
     # Use the information after the slash in the URL to look up the director with the corresponding ID number
     # Store the director in the @director instance variable so the view can format it
 
-    # @director = ???
+
 
     id = params[:id]
-    @actor = Director.find_by({ :id => id.to_i })
+    @director = Director.find_by({ :id => id.to_i })
 
 
   end
